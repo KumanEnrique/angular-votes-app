@@ -1,0 +1,12 @@
+<div class="card text-center mb-3" >
+    <div class="card-header">
+        <h2><a href="{{link.link}}" target="_blank">{{link.title}}</a></h2>
+    </div>
+    <div class="card-body">
+        Points: <h2>{{link.votes}}</h2>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-success btn-lg m-3" (click)="link.votesUp()">Up</button>
+        <button class="btn btn-warning btn-lg" (click)="link.votesDown()">Down</button>
+    </div>
+</div>
